@@ -5,7 +5,7 @@ Input: 7 Output: 21 """
 
 n = int(input("Type the number: "))
 def fib(n):
-    if n in (0, 1):
+    if n < 2:
         return 1
     return fib(n-1) + fib(n-2)
 print(fib(n))
