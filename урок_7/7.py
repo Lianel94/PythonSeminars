@@ -35,9 +35,13 @@ find_farthest_orbit(list_of_orbits), которая среди списка ор
 # print(*find_farthest_orbit(orbits))
 # 2.5 10
 
-def find_farthest_orbit(list1):
+""" def find_farthest_orbit(list1):
     max_elipsode = max(list1, key = lambda x: (x[0]*x[1]) * (x[0]!=x[1]))
     return max_elipsode
 
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
-print(*find_farthest_orbit(orbits))
+print(*find_farthest_orbit(orbits)) """
+
+orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+max_elipsode = max(orbits, key = lambda x: (x[0]*x[1]) * (x[0]!=x[1]))
+print(max_elipsode)
